@@ -3,104 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education Platform</title>
+    <title>Contact Us - EduVas</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .hero {
-            background: #333 url('hero-image.jpg') no-repeat center center/cover;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
-        .hero .btn {
-            background: #ffcc00;
-            color: #333;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            padding: 60px 0;
-        }
-        .card {
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background: #222;
-            color: white;
-            padding: 20px 0;
-        }
-    </style>
 </head>
 <body>
     <header class="hero">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
-                <a class="navbar-brand" href="index.html">Blessing Center</a>
+                <a class="navbar-brand" href="index.html">EduVas</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
         <div class="hero-content text-center text-white">
-            <h1>Education can Change Your Life</h1>
-            <p>Learn valuable skills and transform your future with expert-led courses.</p>
-            <a href="courses.html" class="btn">Find More</a>
+            <h1>Contact Us</h1>
         </div>
     </header>
     
-    <section id="about" class="container py-5 text-center">
-        <h2>About Us</h2>
-        <p>Welcome to Our Blessing Center Education Platform. A place where learning meets innovation and skilled instructor.</p>
-        <a href="about.html" class="btn btn-secondary">Learn More</a>
-    </section>
-    
-    <section id="courses" class="container py-5 text-center">
-        <h2>Our Courses</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <h5>Graphic Design</h5>
-                    <p>Learn design principles and software tools.</p>
-                </div>
+    <section class="container py-5 text-center">
+        <h2>Get in Touch</h2>
+        <p>Have questions? Reach out to us via the form below.</p>
+        <form class="w-50 mx-auto">
+            <div class="mb-3">
+                <input type="text" class="form-control" placeholder="Your Name" required>
             </div>
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <h5>Web Development</h5>
-                    <p>Master HTML, CSS, JavaScript, and frameworks.</p>
-                </div>
+            <div class="mb-3">
+                <input type="email" class="form-control" placeholder="Your Email" required>
             </div>
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <h5>Art & Sketch</h5>
-                    <p>Enhance your artistic skills with expert guidance.</p>
-                </div>
+            <div class="mb-3">
+                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
             </div>
-        </div>
-        <a href="courses.html" class="btn btn-secondary">View All Courses</a>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
     </section>
     
     <footer class="text-center py-4">
-        <p>&copy; 2024 Blessing Center. All Rights Reserved.</p>
+        <p>&copy; 2024 EduVas. All Rights Reserved.</p>
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
