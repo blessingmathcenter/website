@@ -1,108 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Education Platform</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .hero {
-            background: #333 url('hero-image.jpg') no-repeat center center/cover;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
-        .hero .btn {
-            background: #ffcc00;
-            color: #333;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            padding: 60px 0;
-        }
-        .card {
-            background: #fff;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            background: #222;
-            color: white;
-            padding: 20px 0;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Blessing Education Center</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .hero .btn {
+      background: #ffcc00;
+      color: #333;
+      padding: 10px 25px;
+      border-radius: 5px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 40px 0;
+    }
+
+    .card {
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <header class="hero">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">Blessing Center</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="hero-content text-center text-white">
-            <h1>Education can Change Your Life</h1>
-            <p>Learn valuable skills and transform your future with expert-led courses.</p>
-            <a href="courses.html" class="btn">Find More</a>
+
+  <!-- Header -->
+  <header class="hero">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Blessing Center</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
         </div>
-    </header>
-    
-    <section id="about" class="container py-5 text-center">
-        <h2>About Us</h2>
-        <p>Welcome to Our EduVas Education Platform. A place where learning meets innovation.</p>
-        <a href="about.html" class="btn btn-secondary">Learn More</a>
-    </section>
-    
-    <section id="courses" class="container py-5 text-center">
-        <h2>Our Courses</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <h5>Graphic Design</h5>
-                    <p>Learn design principles and software tools.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <h5>Web Development</h5>
-                    <p>Master HTML, CSS, JavaScript, and frameworks.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <h5>Art & Sketch</h5>
-                    <p>Enhance your artistic skills with expert guidance.</p>
-                </div>
-            </div>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <h1>Education Can Change Your Life</h1>
+      <p>Transform your future with expert-led academic courses.</p>
+      <a href="#courses" class="btn">Explore Courses</a>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="container text-center">
+    <h2>About Us</h2>
+    <p>Welcome to Blessing Education Center – where academic excellence meets student success. Our goal is to help every learner unlock their full potential through expert instruction and personalized support.</p>
+  </section>
+
+  <!-- Courses -->
+  <section id="courses" class="container text-center">
+    <h2>Our Courses</h2>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="card">
+          <h5>Math</h5>
+          <p>Master algebra, calculus, and problem-solving with confidence.</p>
         </div>
-        <a href="courses.html" class="btn btn-secondary">View All Courses</a>
-    </section>
-    
-    <footer class="text-center py-4">
-        <p>&copy; 2024 EduVas. All Rights Reserved.</p>
-    </footer>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <h5>Physics & Chemistry</h5>
+          <p>Explore the laws of nature and matter through practical learning.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <h5>Economics</h5>
+          <p>Understand market dynamics and economic theory with ease.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card">
+          <h5>Accounting</h5>
+          <p>Learn the fundamentals of accounting and financial literacy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact (placeholder) -->
+  <section id="contact" class="container text-center">
+    <h2>Contact Us</h2>
+    <p>Need help? Reach out to us via email or phone — we're here to support your journey.</p>
+    <a href="mailto:info@blessingcenter.com" class="btn btn-secondary">Email Us</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Blessing Education Center. All Rights Reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
